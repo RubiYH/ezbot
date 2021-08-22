@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config.json");
 const ez = require("./ez.json");
 
 client.on("message", async (message) => {
@@ -91,4 +90,4 @@ client.on("channelCreate", (channel) => {
 });
 
 //login
-client.login(config.token).then(() => console.log("Logged in."));
+client.login(process.env.token).then(() => console.log("Logged in."));
