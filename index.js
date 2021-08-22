@@ -5,7 +5,11 @@ const ez = require("./ez.json");
 client.on("message", async (message) => {
   //help command
   if(message.content.startsWith('!help')) {
-    message.channel.send('This bot will replace any messages that include `ez` with random phrases from Hypixel.')
+    var helpembed = new Discord.MessageEmbed()
+    .setDescription('This bot will replace any messages that include `ez` with random phrases from Hypixel.')
+    .setColor('GREEN')
+    .setFooter('By Rubi#3719');
+    message.channel.send(helpembed)
   }
   
   if (message.content.toLowerCase().match(/\b(ez)\b/g)) {
