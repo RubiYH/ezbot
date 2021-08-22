@@ -1,0 +1,2 @@
+# ezbot
+ezBot for Discord
