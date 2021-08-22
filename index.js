@@ -4,7 +4,7 @@ const ez = require("./ez.json");
 
 client.on("message", async (message) => {
   //help command
-  if(mesage.content.startsWith('!help')) {
+  if(message.content.startsWith('!help')) {
     message.channel.send('This bot will replace any messages that include `ez` with random phrases from Hypixel.')
   }
   
